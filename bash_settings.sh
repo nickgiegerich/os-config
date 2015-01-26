@@ -7,6 +7,10 @@ export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+export ALTERNATE_EDITOR="" >> $HOME/.bashrc
+export EDITOR=emacsclient >> $HOME/.bashrc
+
+
 #setup emacs startup 
 alias e='emacsclient -c -n'
 alias ec='emacsclient -t'

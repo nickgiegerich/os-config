@@ -1,9 +1,13 @@
 #!/bin/bash
-echo "Adding in scripts to bashrc"
-echo ". `pwd`/bash_settings.sh" >> $HOME/.bashrc
-echo ". `pwd`/git_prompt.sh" >> $HOME/.bashrc
-echo "###########################################" >> $HOME/.bashrc
-echo 'export ALTERNATE_EDITOR=""' >> $HOME/.bashrc
-echo "export EDITOR=emacsclient" >> $HOME/.bashrc
 
-echo "Done"
+# append script to ~/.bashrc so it launches when the shell launches.
+# only do this if it isn't already in bashrc
+if ! grep -Fxq ". ~/.bash_settings.sh" ~/.bashrc
+then
+	echo "Appending bash_settings.sh to ~/.bashrc..."
+	echo ". `pwd`/bash_settings.sh" >> $HOME/.bashrc
+fi
+
+#source bashrc
+echo "Install complete."
+echo "Restart bash to get all changes"

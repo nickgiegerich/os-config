@@ -6,20 +6,15 @@
 #    * the branch/status of the current git repository
 # 
 # USAGE:
+#   Add this into your bashrc or similar file and then
+#   restart bash.
 #
-#   1. Save this file as ~/.git_svn_bash_prompt
-#   2. Add the following line to the end of your ~/.profile or ~/.bash_profile:
-#        . ~/.git_svn_bash_prompt
-#   3. Alternatively you can just make a symbolic link to this profile
 #
-# AUTHOR:
-# 
+# AUTHOR: 
 #   Shane K. Panter
-#   Boise State 
+#   Foundation Code
 #
 #   Based on work by halbtuerke and lakiolen and scott woods
-#   shane - updated to use the new svn model where there is NOT a .svn folder 
-#           in each working directory.
  
 # The various escape codes that we can use to color our prompt.
         RED="\[\033[0;31m\]"

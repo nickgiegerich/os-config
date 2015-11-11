@@ -8,11 +8,5 @@ then
 	echo ". `pwd`/bash_settings.sh" >> $HOME/.bashrc
 fi
 
-if ! grep -Fxq ". ~/.git_prompt.sh" ~/.bashrc
-then
-	echo "Appending git_prompt.sh to ~/.bashrc..."
-	echo ". `pwd`/git_prompt.sh" >> $HOME/.bashrc
-fi
-
 echo "Install complete."
 echo "Restart bash to get all changes"

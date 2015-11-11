@@ -1,13 +1,20 @@
 #!/bin/bash
 
+#Add in bin to the path
+if [[ ! ":$PATH:" == *":$HOME/bin:"* ]]; then
+    PATH=$PATH:$HOME/bin
+fi
+
+
 #shortcuts
 alias ls="ls -G"
 alias ll="ls -l"
 alias tree="tree -C"
 
+
 #set emacs the default editor
-export ALTERNATE_EDITOR="" >> $HOME/.bashrc
-export EDITOR=emacsclient >> $HOME/.bashrc
+export ALTERNATE_EDITOR="" 
+export EDITOR=emacsclient 
 
 #setup emacs startup 
 alias e='emacsclient -c -n'

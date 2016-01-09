@@ -7,7 +7,7 @@ fi
 
 
 #shortcuts
-alias ls="ls -G"
+alias ls="ls --color"
 alias ll="ls -l"
 alias tree="tree -C"
 
@@ -24,5 +24,12 @@ alias ec='emacsclient -t'
 export TERM="xterm-color"
 PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \W \$\[\033[00m\] "
 
-#Set our fancy shell setting when working with git
-. /Users/shane/github/os-config/git_prompt.sh
+#When running mintty and cygwin/x The Display var is not
+#set by default. So we need to set the display. NOTE:
+#sometimes X11 running on windows has stale lock files
+#located in /tmp/.X0-lock where X0 
+if [ $(uname -o) = "Cygwin" ]
+then
+    export DISPLAY=:0.0
+fi
+

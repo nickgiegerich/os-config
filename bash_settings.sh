@@ -5,13 +5,6 @@ if [[ ! ":$PATH:" == *":$HOME/bin:"* ]]; then
     PATH=$PATH:$HOME/bin
 fi
 
-
-#shortcuts
-alias ls="ls --color"
-alias ll="ls -l"
-alias tree="tree -C"
-
-
 #set emacs the default editor
 export ALTERNATE_EDITOR="" 
 export EDITOR=emacsclient 

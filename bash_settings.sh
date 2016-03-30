@@ -21,8 +21,20 @@ PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \W \$\[\033[00m\] "
 #set by default. So we need to set the display. NOTE:
 #sometimes X11 running on windows has stale lock files
 #located in /tmp/.X0-lock where X0 
-if [ $(uname -o) = "Cygwin" ]
+if [ $(uname) = "Cygwin" ]
 then
     export DISPLAY=:0.0
 fi
+
+#Set some stuff on MAC
+if [ $(uname) = "Darwin" ]
+then
+    alias ls="ls -G"
+    alias ll="ls -l"
+fi
+
+
+
+#Add in gopath
+export GOPATH=$HOME/gocode
 

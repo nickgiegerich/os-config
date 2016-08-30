@@ -31,10 +31,14 @@ if [ $(uname) = "Darwin" ]
 then
     alias ls="ls -G"
     alias ll="ls -l"
+    #Point emacs to something more recent than 1967 :)
+    export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+    export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
+    alias emacs="Emacs"
 fi
-
 
 
 #Add in gopath
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
+

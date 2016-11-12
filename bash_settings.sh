@@ -32,7 +32,7 @@ then
     alias ls="ls -G"
     alias ll="ls -l"
     #Point emacs to something more recent than 1967 :)
-    export PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+    export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
     alias emacs="Emacs"
     #Add in macports to the path
     #Everytime you upgrade macports this will be added into your .bash_profile
@@ -40,7 +40,7 @@ then
     #if you have spare time ... LOL) We add this here and then source from .bashrc
     #so that our PATH and FALLBACK lib path are available in both and interactive
     #and non interactive shell
-    export PATH="$PATH/opt/local/bin:/opt/local/sbin"
+    export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
     export DYLD_FALLBACK_LIBRARY_PATH="/opt/local/lib:$DYLD_FALLBACK_LIBRARY_PATH"
 fi
 

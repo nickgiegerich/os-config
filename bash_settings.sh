@@ -32,7 +32,7 @@ then
     alias ls="ls -G"
     alias ll="ls -l"
     #Point emacs to something more recent than 1967 :)
-    export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+    export PATH="/Applications/Emacs.app/Contents/MacOS/bin:/Applications/Emacs.app/Contents/MacOS/:$PATH"
     alias emacs="Emacs"
     #Add in macports to the path
     #Everytime you upgrade macports this will be added into your .bash_profile

@@ -42,6 +42,12 @@ then
     #and non interactive shell
     export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
     export DYLD_FALLBACK_LIBRARY_PATH="/opt/local/lib:$DYLD_FALLBACK_LIBRARY_PATH"
+    #Add in Racket into the path
+    export PATH="$PATH:/Applications/Racket v6.7/bin"
+
+    #Add in Plan 9 stuff
+    PLAN9=/usr/local/plan9 export PLAN9
+    PATH=$PATH:$PLAN9/bin export PATH
 fi
 
 

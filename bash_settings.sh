@@ -5,13 +5,6 @@ if [[ ! ":$PATH:" == *":$HOME/bin:"* ]]; then
     PATH=$PATH:$HOME/bin
 fi
 
-#set emacs the default editor
-export ALTERNATE_EDITOR=""
-export EDITOR=emacsclient
-
-#setup emacs startup
-alias e='emacsclient -c -n'
-alias ec='emacsclient -t'
 
 #setup the terminal
 export TERM="xterm-color"
@@ -54,3 +47,6 @@ fi
 #Add in gopath
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
+
+#Add in alias
+alias ll='ls -l'

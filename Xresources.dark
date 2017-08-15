@@ -54,3 +54,7 @@
 !! white dark/light
 *color7:                S_base2
 *color15:               S_base3
+
+!! update fonts for Xterm
+xterm*faceName: inconsolata
+xterm*faceSize: 18

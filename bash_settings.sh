@@ -51,5 +51,5 @@ export PATH=$PATH:$GOPATH/bin
 #Add in alias
 alias ll='ls -l'
 
-alias e='emacsclient -c -n'
+alias e='emacsclient -c -n --alternate-editor=""'
 alias ec='emacsclient -t'

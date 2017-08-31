@@ -50,3 +50,6 @@ export PATH=$PATH:$GOPATH/bin
 
 #Add in alias
 alias ll='ls -l'
+
+alias e='emacsclient -c -n'
+alias ec='emacsclient -t'

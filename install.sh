@@ -14,8 +14,8 @@ then
 	echo ". `pwd`/git_prompt.sh" >> $HOME/.bashrc
 fi
 
-ln -s `pwd`/Xresources.dark $HOME/.Xresources
-ln -s `pwd`/xinitrc $HOME/.xinitrc
+#ln -s `pwd`/Xresources.dark $HOME/.Xresources
+#ln -s `pwd`/xinitrc $HOME/.xinitrc
 
 echo "Install complete."
 echo "Restart bash to get all changes"

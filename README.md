@@ -1,15 +1,9 @@
 OS Config
 ============
-This contains my bash configurations and customization's so when
-I upgrade I can quickly get everything up and going again.
+All my settings for my daily dev tools. This repo contains
+customizations and settings for the following tools.
 
-Most of everything else that used to be here has been moved to
-other repositories. For example VIM, and Emacs now have their
-own config files.
+- vim  - Installs a minimal set of plugins for usage
+- bash - Installs a minimal set of customizations
+- tmux - Installs tmux setup.
 
-Setup
-==============
-After running the setup script your .bashrc should have
-the bash_settings.sh appended to the end of the script.
-Any customization's should be placed in bash_settings.sh
-so the changes can be preserved after OS upgrades.

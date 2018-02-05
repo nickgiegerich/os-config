@@ -3,6 +3,9 @@ Vim - setup and install
 This is my personal vim setup with a list of plugins that
 are present as well as their respecitive urls.
 
+Clone this repo and all submodules with:
+git clone --recursive git@github.com:shanep/os-config
+
 Fonts
 =====
 The Linux fonts rely on the Inconsolata font which can be downloaded from the link below
@@ -46,7 +49,18 @@ uncommented lines, and it will remove comment markup for already commented text.
 
 tagbar
 ------
-The tabbar plugin allows you to view all of the symbols in a given file.
+The tagbar plugin allows you to view all of the symbols in a given file.
 This plugin has been mapped to F4
 * https://github.com/majutsushi/tagbar
+
+vim-colors-solarized
+--------------------
+Set the vim solorized colors
+* https://github.com/altercation/vim-colors-solarized
+
+
+
+
+
+
 

@@ -11,12 +11,7 @@ map <F8> :!ctags -R --fields=+nks --excmd=pattern --format=2 .<CR>
 
 
 "general code formating options
-set linebreak
 set nu
-set noexpandtab
-set tabstop=8
-set softtabstop=8
-set shiftwidth=8
 set autoindent
 set hlsearch
 set incsearch

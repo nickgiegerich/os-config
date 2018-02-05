@@ -52,4 +52,6 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
 filetype plugin indent on
-syntax on
+if !exists("g:syntax_on")
+	syntax enable
+endif

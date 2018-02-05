@@ -5,7 +5,7 @@
 setup() 
 {
 	echo "Sym linking .vim to git repo"
-	ln -s `pwd`/vim ~/.vim
+	ln -s `pwd` $HOME/.vim
 }
 
 #Sets up all the basic directories since we are

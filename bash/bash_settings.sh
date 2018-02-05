@@ -11,7 +11,7 @@ fi
 export TERM="xterm-color"
 #Set the default bash prompt to the following
 PS1='[\u@\h:\w]\$'
-PROMPT_COMMAND='__git_ps1 "[\u@\h:\W]" "\n\$"'
+PROMPT_COMMAND='__git_ps1 "[\u@\h:\W]" "\n\$ "'
 GIT_PS1_SHOWCOLORHINTS=true
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_DESCRIBE_STYLE=branch

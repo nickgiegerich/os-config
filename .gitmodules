@@ -1,3 +1,6 @@
-[submodule "tcomment_vim"]
-	path = tcomment_vim
+[submodule "vim/pack/shanep/start/tcomment_vim"]
+	path = vim/pack/shanep/start/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim
+[submodule "vim/pack/shanep/start/vim-airline"]
+	path = vim/pack/shanep/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git

@@ -1,4 +1,6 @@
 #!/bin/bash
+git submodule init
+git submodule update
 
 #install bash settings
 pushd .

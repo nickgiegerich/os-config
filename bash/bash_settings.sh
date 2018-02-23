@@ -7,8 +7,9 @@ if [[ ! ":$PATH:" == *":$HOME/bin:"* ]]; then
     PATH=$PATH:$HOME/bin
 fi
 
-#setup the terminal
+#custom exports
 export TERM="xterm-256color"
+
 #Set the default bash prompt to the following
 PS1='[\u@\h:\w]\$'
 PROMPT_COMMAND='__git_ps1 "[\u@\h:\W]" "\n\$ "'
@@ -22,6 +23,7 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 #Add in alias
 alias ll='ls -l'
 alias la='ls -l -a'
+alias e='emacsclient -c -n --alternate-editor=""'
 
 #When running mintty and cygwin/x The Display var is not
 #set by default. So we need to set the display. NOTE:

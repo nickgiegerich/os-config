@@ -18,4 +18,9 @@ cd tmux
 source ./install.sh
 popd
 
+pushd .
+cd i3 
+source ./install.sh
+popd
+
 echo "Restart bash to get all changes"

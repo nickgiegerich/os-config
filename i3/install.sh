@@ -9,11 +9,11 @@ else
 fi
 echo "Finished linking xinit files"
 
-echo "Sym linking XResources files to git repo"
-if [ -e "$HOME/.XResources" ]
+echo "Sym linking Xresources files to git repo"
+if [ -e "$HOME/.Xresources" ]
 then
-	echo "XResources already linked"
+	echo "Xresources already linked"
 else
-	ln -s `pwd`/XResources.dark $HOME/.XResources
+	ln -s `pwd`/Xresources $HOME/.Xresources
 fi
 echo "Finished linking xinit files"

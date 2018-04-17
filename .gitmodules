@@ -10,6 +10,3 @@
 [submodule "vim/pack/shanep/start/tagbar"]
 	path = vim/pack/shanep/start/tagbar
 	url = https://github.com/majutsushi/tagbar
-[submodule "vim/pack/shanep/start/vim-colors-solarized"]
-	path = vim/pack/shanep/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized

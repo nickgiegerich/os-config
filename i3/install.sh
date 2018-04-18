@@ -16,4 +16,12 @@ then
 else
 	ln -s `pwd`/Xresources $HOME/.Xresources
 fi
-echo "Finished linking xinit files"
+
+echo "Sym linking i3 config files to git repo"
+if [ -e "$HOME/.config/i3/config" ]
+then
+	echo "config already linked"
+else
+	ln -s `pwd`/config $HOME/.config/i3/config
+fi
+echo "Finished linking i3 files"

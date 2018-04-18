@@ -58,3 +58,4 @@
 !! update fonts for Xterm
 xterm*faceName: inconsolata
 xterm*faceSize: 18
+xterm*eightBitInput: false

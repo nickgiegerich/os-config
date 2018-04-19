@@ -24,4 +24,12 @@ then
 else
 	ln -s `pwd`/config $HOME/.config/i3/config
 fi
+
+echo "Sym linking i3-status config files to git repo"
+if [ -e "$HOME/.i3status.conf" ]
+then
+	echo "status already linked"
+else
+	ln -s `pwd`/i3status.conf $HOME/.i3status.conf
+fi
 echo "Finished linking i3 files"

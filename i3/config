@@ -174,3 +174,6 @@ bar {
 		statusline #000000
 		}
 }
+
+
+bindsym $mod+g exec i3lock --color=000000

@@ -176,3 +176,8 @@ bar {
 
 
 bindsym $mod+g exec i3lock --color=000000
+
+#i3-gaps setup
+for_window [class="^.*"] border pixel 0
+gaps inner 20
+gaps outer 0

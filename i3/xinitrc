@@ -2,4 +2,5 @@
 #turn off console beep
 xset b off
 xrdb -merge $HOME/.Xresources
+xsetroot -solid "#003B00"
 exec i3

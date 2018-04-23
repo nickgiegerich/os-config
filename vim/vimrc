@@ -17,8 +17,6 @@ set hlsearch
 set incsearch
 
 
-" Make command line two lines high
-set ch=2
 " Hide the mouse when typing text
 set mousehide
 
@@ -54,4 +52,19 @@ let g:airline#extensions#tabline#enabled = 1
 filetype plugin indent on
 if !exists("g:syntax_on")
 	syntax enable
+endif
+
+if has("cscope")
+	" set csprg=/usr/local/bin/cscope
+	set csto=0
+	set cst
+	set nocsverb
+	" add any database in current directory
+	if filereadable("cscope.out")
+	    cs add cscope.out
+	" else add database pointed to by environment
+	elseif $CSCOPE_DB != ""
+	    cs add $CSCOPE_DB
+	endif
+	set csverb
 endif

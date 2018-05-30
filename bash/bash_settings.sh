@@ -4,7 +4,7 @@
 
 #Add in bin to the path
 if [[ ! ":$PATH:" == *":$HOME/bin:"* ]]; then
-    PATH=$PATH:$HOME/bin
+    PATH=$HOME/bin:$PATH
 fi
 
 #custom exports
@@ -32,4 +32,18 @@ alias e='emacsclient -c -n --alternate-editor=""'
 if [ $(uname) = "Cygwin" ]
 then
     export DISPLAY=:0.0
+fi
+
+#Set some overrides for some of OSX's ancient defaults
+if [ $(uname) = "Darwin" ]
+then
+	#link in current version of emacs for command line usage.
+	if [ ! -e $HOME/bin/emacs ]
+	then
+		ln -s /Applications/Emacs.app/Contents/MacOS/Emacs $HOME/bin/emacs
+	fi
+	#add emacs utils to path
+	if [[ ! ":$PATH:" == *":/Applications/Emacs.app/Contents/MacOS/bin:"* ]]; then
+	    PATH=/Applications/Emacs.app/Contents/MacOS/bin:$PATH
+	fi
 fi
